@@ -18,7 +18,7 @@ Zeromq is a very low-level fast asynchronous messaging library that can handle l
 
 ---
 
-#### Lightweight and Efficient:
+### Lightweight and Efficient:
 zeromq lightweight and low level library made in C++ uses as little resources as possible while maintaining the best performance
 
 ---
