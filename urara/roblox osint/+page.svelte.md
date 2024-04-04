@@ -1,6 +1,6 @@
 ---
 title: 'Roblox Osint'
-image: '/hello-world/urara.webp'
+image: '/hello osint/polyc2.png'
 alt: 'Urara'
 created: 2023-11-23
 updated: 2021-11-23
