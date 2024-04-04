@@ -33,7 +33,7 @@ The even crazy thing is that we are also able to use 'DeviceGravityChanged' whic
 changes on the devices accelerometer, this can also be done to detect gravitational anomalies that allow us to trianglate a closer 
 area to where they are depending on earthse gravity field anomalies depending on miligals (-50 to 50)
 
-————————————————
+---
 
 ### User Data
 
@@ -45,7 +45,7 @@ To be able to have this work we must use the 'HttpService' to be intertwined wit
 Another small thing I want to mention is the 'UserInputService' that is able to give us information about the detection and capture of different types of input
 from the users device 
 
-————————————————
+---
  
 ### SOURCES
 
@@ -59,4 +59,4 @@ https://developer.roblox.com/en-us/api-reference/class/UserInputService
 https://accountinformation.roblox.com/docs#!/PhoneInformation/post_v1_phone
 ```
 
-————————————————
+---
