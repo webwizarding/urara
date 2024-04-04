@@ -1,6 +1,6 @@
 ---
 title: 'The ZeroMQ Protocol'
-image: '/roblox osint/polyc2.png'
+image: '/zeromqprot/0mq0.png'
 alt: 'Urara'
 created: 2023-08-06
 updated: 2021-08-06
