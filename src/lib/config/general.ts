@@ -70,11 +70,11 @@ export const footer: FooterConfig = {
   nav: [
     {
       text: 'Feed',
-      link: '/atom.xml'
+      link: ''
     },
     {
       text: 'Sitemap',
-      link: '/sitemap.xml'
+      link: ''
     }
   ]
 }
