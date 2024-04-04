@@ -56,7 +56,7 @@ export const head: HeadConfig = {}
 export const header: HeaderConfig = {
   nav: [
     {
-      text: 'Argonhosting',
+      text: 'ArgonHosting investigation',
       link: '/Argonhosting
     },
     {
