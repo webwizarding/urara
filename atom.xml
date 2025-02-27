@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://urara-demo.netlify.app/</id>
-  <title><![CDATA[Poly]]></title>
+  <title><![CDATA[shit]]></title>
   <subtitle><![CDATA[blog]]></subtitle>
   <icon>https://urara-demo.netlify.app/favicon.png</icon>
   <link href="https://urara-demo.netlify.app" />
   <link href="https://urara-demo.netlify.app/atom.xml" rel="self" type="application/atom+xml" />
-  <updated>2025-02-27T22:15:32.673Z</updated>
+  <updated>2025-02-27T22:16:17.224Z</updated>
   <author>
     <name><![CDATA[zic]]></name>
   </author>
