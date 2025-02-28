@@ -86,3 +86,36 @@ Where:
 - \( G \): Grappling
 - \( D \): Defense
 - \( E \): Experience
+- \( R \): Reach Bonus
+- \( W \): Weight Multiplier
+
+## 3. Prediction confidence
+Confidence comes from the score differential:
+```math
+\text{Confidence} = \max\left(50, \min\left(99, 50 + 12\Delta\right)\right) \quad \text{where } \Delta = |\text{Score}_1 - \text{Score}_2|
+```
+- **Heuristic Basis**: Each 1-point score difference ≈ 12% confidence boost
+- **Range Clamping**: Maintains 50-99% bounds for realistic predictions
+
+## 4. Comparative Analysis
+Comparisons guide post-predictions:
+1. **Striking Advantage**: `argmax(SLpM × Str. Acc.)`
+2. **Grappling Advantage**: `argmax(TD Avg. + Sub. Avg.)`
+3. **Volume Advantage**: `argmax(SLpM)`
+
+## 5. Visualization
+Two graph visualizations make it easier to compare data:
+1. **Total Score**: Bar chart with prediction confidence
+2. **Subscore**: Bars comparing striking, grappling, defense, experience, and reach
+
+## 6. Issues
+1. **Prediction issues**:
+   - My algorithm oversimplified the MMA nonlinear dynamics
+   - Fixed weights need to be validated  through historical data
+   - Excludes opponent-specific matchup analysis
+   - The data is restricted to one stats website that might not have the most accurate data than other websites
+
+2. **Enhancement Opportunities**:
+   - Incorporate temporal trends (recent performance weighting)
+   - Add weight class-specific coefficients
+   - Include clinch and ground control metrics
