@@ -33,54 +33,32 @@ The fighter's final score is computed from a weighted combination of four core c
 
 ### 2.1 Striking Score
 Striking effectiveness:
-```math
-\text{Striking} = 2 \times \text{SLpM} \times \text{Str. Acc.} - \text{SApM} \times (1 - \text{Str. Def.})
-```
+![striking](./strikingeffectiveness.png)
 - **What we can infer**: High output is better and accuracy whilst poor defense brings the score down
 
 ### 2.2 Grappling Score
 Ground game dominance:
-```math
-\text{Grappling} = 3 \times \text{TD Avg.} \times \text{TD Acc.} + 2 \times \text{Sub. Avg.}
-```
+![ground](./grounddominance.png)
 - **What we can infer**: Emphasizes successful takedowns (3× weight) and submission attempts
 
 ### 2.3 Defense Score
 Defensive skills:
-```math
-\text{Defense} = 2 \times \text{Str. Def.} + \text{TD Def.}
-```
+![defense](./defensiveskills.png)
 - **Personal design choice**: I prioritized strike defense (2× weight) over takedown defense
 
 ### 2.4 Experience Score
 Career performance and longevity/reliability:
-```math
-\begin{align*}
-\text{Experience} = &\; 2 \times \text{Win Rate} + \text{KO Rate} + \text{Sub Rate} \\
-                  &+ 0.5 \times \text{Stance Bonus} \\
-                  &+ 0.02 \times \max(0, 35 - \text{Age})
-\end{align*}
-```
+![longevity](./reliability)
 - **Components**:
   - Win Rate: `Wins / Total Fights`
   - Stance (Bonus): `1` for Orthodox
   - Age Penalty: Linear decrease after the age of35
 
 ### 2.5 Physiological factos
-```math
-\begin{align*}
-\text{Reach Bonus} &= 0.05 \times \text{Reach (inches)} \\
-\text{Weight Multiplier} &= \begin{cases}
-1.05 & \text{if } 145 < \text{Weight} < 170 \\
-1.0 & \text{otherwise}
-\end{cases}
-\end{align*}
-```
+![physiological](./physiological.png)
 
 ### 2.6 Composition formula
-```math
-\text{Total Score} = \left(0.4S + 0.3G + 0.2D + 0.1E + R\right) \times W
-```
+![totalscore](./score.png)
 Where:
 - \( S \): Striking
 - \( G \): Grappling
@@ -91,9 +69,7 @@ Where:
 
 ## 3. Prediction confidence
 Confidence comes from the score differential:
-```math
-\text{Confidence} = \max\left(50, \min\left(99, 50 + 12\Delta\right)\right) \quad \text{where } \Delta = |\text{Score}_1 - \text{Score}_2|
-```
+![confidence](./confidence.png)
 - **Heuristic Basis**: Each 1-point score difference ≈ 12% confidence boost
 - **Range Clamping**: Maintains 50-99% bounds for realistic predictions
 
