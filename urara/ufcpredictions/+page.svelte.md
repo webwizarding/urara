@@ -48,7 +48,7 @@ Defensive skills:
 
 ### 2.4 Experience Score
 Career performance and longevity/reliability:
-![longevity](./reliability)
+![longevity](./reliability.png)
 - **Components**:
   - Win Rate: `Wins / Total Fights`
   - Stance (Bonus): `1` for Orthodox
