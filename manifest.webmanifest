@@ -1,6 +1,6 @@
 {
-  "name": "shit",
-  "short_name": "shit",
+  "name": "dev",
+  "short_name": "dev",
   "lang": "en-US",
   "description": "Powered by SvelteKit/Urara",
   "id": "https://urara-demo.netlify.app/",
