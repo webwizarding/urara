@@ -119,3 +119,7 @@ Two graph visualizations make it easier to compare data:
    - Incorporate temporal trends (recent performance weighting)
    - Add weight class-specific coefficients
    - Include clinch and ground control metrics
+
+## Output images
+![prediction](./pred.png)
+![calculation comparisons](./calc.png)
